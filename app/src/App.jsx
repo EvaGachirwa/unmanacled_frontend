@@ -1,23 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { browserHistory } from "react-router";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code> src / App.js </code> and save to reload.{" "}
-        </p>{" "}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React{" "}
-        </a>{" "}
-      </header>{" "}
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <h1>Best I ever had</h1>
+          {/* <Route name="home" exact path="/" component={HomePage} /> */}
+        </div>
+      </Router>
+    );
+  }
 }
-
 export default App;
