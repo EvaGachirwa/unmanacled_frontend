@@ -12,4 +12,4 @@ jobs:
           dry-run: false # Check out the console output before setting this to false
           exempt-branches-regex: ^(main|master)$
           days-before-branch-stale: 30
-          days-before-branch-delete: 3
+          days-before-branch-delete: 0
